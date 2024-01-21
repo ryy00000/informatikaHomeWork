@@ -1,0 +1,14 @@
+program quest2;
+
+var a,b,c:integer;
+begin
+   
+  while True do begin
+    writeln('введите число для нахождения его последней цифры и умножения ее на десять');
+    Readln(a);
+  
+    b := (a mod 10) * 10; //последняя цифра умноженное на 10
+     
+    writeln('Ответ: ', b);
+  end
+end.
