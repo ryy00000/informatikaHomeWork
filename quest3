@@ -1,0 +1,22 @@
+program quest3;
+var a,b,c,d,e:integer;
+
+begin
+  while True do begin
+    writeln('Введите трех значное число, чтобы найти разность вашего числа и числа зеркального вашему');
+    Readln(a);
+  
+    if (a < 100) or (a > 999) then
+      begin
+        writeln('!eror, введите трех значное число!');
+      end
+    else
+      begin
+        b := a div 100;           //первая цифра
+        c := (a div 10) mod 10;   //центральная цифра
+        d := a mod 10;            //последняя цифра
+        e := a - (d * 100 + c * 10 + b);
+        writeln('Ответ: ', e);
+      end;
+    end
+end.
