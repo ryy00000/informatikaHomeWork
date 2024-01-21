@@ -1,0 +1,11 @@
+program HomeWork1;
+
+  var k,a,b:integer;
+
+begin
+  
+  writeln('Введите колл-во уроков');
+  Readln(k);
+  a:= k * 40 + k * 5 + 2 * 40;
+  writeln('dhtvz d irjkt ',a);
+end.
