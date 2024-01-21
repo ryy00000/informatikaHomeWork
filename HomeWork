@@ -1,0 +1,24 @@
+program HomeWork;
+
+  var a,b,c,d,e,f:integer;
+
+begin
+  while True do begin
+  writeln('Введите четырех значное число, для сложения суммы первых двух цифр и суммы последних двух цифр');
+  Readln(a);
+  
+  if (a < 999) or (a > 9999) then
+    begin
+      writeln('!eror, введите четырех значное число!');
+    end
+  else
+    begin
+      b := a div 1000;           //первая цифра
+      c := (a div 100) mod 10;   //вторая цифра
+      d := (a div 10) mod 10;    //третья цифра
+      e := a mod 10;           //четвертая цифра
+      f := (b + c) + (d + e);
+      writeln('Ответ : ', f);
+    end;
+  end
+end.
